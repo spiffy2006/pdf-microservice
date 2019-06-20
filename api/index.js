@@ -1,10 +1,9 @@
 const express = require('express')
-const pdf = require('chrome-headless-render-pdf')
+const RenderPDF = require('chrome-headless-render-pdf')
 const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-  const RenderPDF = require('chrome-headless-render-pdf');
   console.log(req.query)
   // return res.send(req.query)
   RenderPDF.generatePdfBuffer(req.query.url, {chromeOptions: ['--ignore-certificate-errors', '-no-sandbox']})
