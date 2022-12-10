@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "chrome-headless-render-pdf": "^1.8.2",
-    "express": "^4.17.0"
+    "express": "^4.17.3"
   },
   "devDependencies": {},
   "scripts": {
